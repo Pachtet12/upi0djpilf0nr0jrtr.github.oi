@@ -1,38 +1,42 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Архивные записи</title>
-        <style>
-        .table1 {
-        background-color: rgb(39, 38, 38);
-        width: 17.2%;
-        float: left;
-        }
-        .table2 {
-        height: 100px;
-        width: 82.8%;
-        float: right;
-        }
+<head>
+    <meta charset="UTF-8">
+    <title>Архивные записи</title>
+    <script>
+        function input(){
 
-        .p1{
-        color: white;
-        font-size: 10px;
-        bottom: 100px;
+            let name2 = document.getElementById("nameInput").value; 
+            let name1 = ["Freezy","freezy","Фриз","фриз","Sistemerror1","sistemerror1","Nomen","nomen","Noname","noname","Nonyam","nonyam","Ноням","ноням", "malgita", "Malgita","MALGITA", "names_for_f0ls", "Names_for_f0ls", "Names_For_F0ls", "NAMES_FOR_F0LS", "NAMES_FOR_FOLS", "names_for_fols", "Names_For_Fols", "YueTanHuozai", "yuetanhuozai", "Yue_Tan_Huozai", "yue_tan_huozai", "YUETANHUOZAI", "Bdrider", "BDRIDER", "failed_captcha", "FAILED_CAPTCHA", "Failed_Captcha", "failedcaptcha", "FailedCaptcha", "FAILEDCAPTCHA", "TreeLukewarm", "treelukewarm", "tree_lukewarm", "Tree_Lukewarm"];
+            let i_name = ["Ирис","ирис","rx_iris","Айрис","айрис","iris"]; 
+
+            if (name1.includes(name2.toLowerCase())){
+                document.getElementById("resultMessage").innerHTML = "Такое имя не доступно.";
+            }
+            
+            else if (i_name.includes(name2.toLowerCase())){
+                document.getElementById("resultMessage").innerHTML = "Такое имя уже занято";
+            }
+            else if (0 == name2){
+                document.getElementById("resultMessage").innerHTML = "ВВЕДИТЕ ИМЯ";
+            }
+
+            else if (name2 == "siri_xr"){
+                location.href = "admin_str.html";
+            }
+
+            else if(name2 == "Pachtet12"){
+                location.href = "gosha.html"
+            }
+
+            else{
+                location.href = "gl_stranica.html";
+            }
+
 
         }
-        a{
-            font-family: 'VCR OSD Mono [RUS by Daymarius]';
-        }
-        .tr{
-            text-align: center; 
-        }
-        .td{
-            height: 25.5vh;
-        }
-        img{
-            height: 16vh;
-        }
-
+    </script>
+    <style>
         @font-face {
             font-family: 'VCR OSD Mono [RUS by Daymarius]';
             src: url('VCROSDMonoRUSbyDaymarius.woff2') format('woff2'),
@@ -44,83 +48,40 @@
 
         p{
             font-family: 'VCR OSD Mono [RUS by Daymarius]';
-        }
-        .p_white{
-            font-family: 'VCR OSD Mono [RUS by Daymarius]';
-            color: white;
+            color:rgb(12, 189, 27);
             font-size: 20px;
         }
-        b{
-            font-size: 140%;
-        }
-        html, body {
-            height: 100%;
-        }
-        </style>
-    </head>
 
-    <body bgcolor="black" style="height: 100%;">
-        <table class="table2">
-            <tr>
-                <td bgcolor="#7f7f7f" style="height: 100px;">
-                    <a href="index.html"><img src="1565_20240418103306.png" style="height: 50px;"></a>
-                    <a class="p1">/:Лобби</a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <br>
-                    <a class="p_white">вам здесь не рады! идите * с этого сайта.</a>
-                    <p class="p_white">этот сайт создавался для хранения основной важной информации о субъектах похожих на [rx_iris] и прочего что связано со всем этим в этой реальности.
-                на данный момент у этой истории имеется название « ирисверс » что такое ирисверс?
-                сложно сказать, но возможно в вашем мире хотя бы есть 1 "ирис" и если вы его знаете, это один из лиц в этой бесконечной цепи.
-                копии в этой реальности начали брать как трафарет основную информацию из сломаного файла, принадлежащего [rx_iris], оригиналу. 
-                что бы заменить его в сломаном мире, (сейчас имеющем название [нигде]) но так как целые файлы кем и 
-                являются копии не могут находиться в сломаном пространстве, то их просто вымещало в другой мир не создавая парадокса в одном и 
-                по факту не должно было создавать
-                парадокса в реальности так как они НЕ должнв были контактировать, но [rx_iris] слишком зпинтересован в том что бы покинуть [нигде], 
-                проводя эксперименты на копиях, ведь они как то связаны с ним и этим местом. 
-                покинуть его он не может потому что это его оригинальный мир и он является привязкой к нему, 
-                но так как мир сломан, лазейки все таки в нем нашлись и он может хотя бы на какое то время посещать и другие миры.. а может и реальности.</p>
-                <p class="p_white">ирисы научились контактировать межда собой по тем же телефонам, 
-                но как они могут писать себе находясь вообще в разных мирах? 
-                до конца не известно как это возможно, 
-                все что мы знаем это только то что есть копия #10 подключая и предоставляющая им такой доступ, 
-                хотя есть и те кто могут видеться лично, но не лицом к лицу, так как для исправления парадокса, 
-                парадоксам достаточно узнать об их существовании встретившись взглядами. 
-                по этому их встречи обычно происходят либо спиной к спине либо еще как то надежно закрыв глаза.</p>
-                <p class="p_white">ирисы научились контактировать межда собой по тем же телефонам, но как они могут писать себе находясь вообще в разных мирах? 
-                до конца не известно как это возможно, все что мы знаем это только то что есть копия #10 подключая и предоставляющая им такой доступ, 
-                хотя есть и те кто могут видеться лично, но не лицом к лицу, так как для исправления парадокса, 
-                парадоксам достаточно узнать об их существовании встретившись взглядами. по этому их встречи обычно происходят либо спиной к спине либо еще как то надежно закрыв глаза.
-                в ирисверсе есть и другие поколения, в каждом поколении имеется по 9 копий и 1 не сменяемый оригинал. копий за всю историю было
-                у копий есть номера присвоеные им либо по обнаружению, как 3 - 3 был найден после 2 или есть такие кто просто заменили уже ранее погившую копию, 
-                как допустим 5 - на данный момент 5й номер стерт и со временем на его замену должен появиться в каком то другом мире кто появится под номером 5.</p>
-                </td>
-            </tr>
-        </table>
-        <table class="table1">
-            <tr class="tr">
-                <td>
-                    <a href="delo_str.html"><img src="pookie_papka.png"></a>
-                    <p><b>Копии</a></b></p>
-                </td>
-            </tr>
-            <tr class="tr">
-                <td style="background-color: rgb(91, 91, 91);;">
-                    <img src="pookie_papka.png">
-                    <p><b>Лобби</a></b></p>
-                </td>
-            </tr>
-            <tr class="tr">
-                <td>
-                    <a href="nowhere.html"><img src="pookie_papka.png"></a>
-                    <p><b>Нигде</b></p>
-                </td>
-            </tr>
-            <tr>
-                <td class="td"></td>
-            </tr>
-        </table>
-    </body>
+        input{
+            background-color: #000;
+            color: rgb(12, 189, 27);
+            width: 300px;
+            height: 25px;
+            outline: 0;
+            border: 2px solid white;
+            font-family: 'VCR OSD Mono [RUS by Daymarius]';
+        }
+
+        button{
+            background-color: rgb(12, 189, 27);
+            color: #000;
+            outline: 0;
+            border: 2px solid #000;
+            font-family: 'VCR OSD Mono [RUS by Daymarius]';
+        }
+        img{
+            height: 90px;
+        }
+    </style>
+</head>
+
+<body bgcolor="black">
+    <br>
+    <br>
+    <img src="cloud1.png">
+    <p>Введите имя пользователя</p>
+    <input id="nameInput">
+    <a><button onclick="input()">Войти</button></a>
+    <p id="resultMessage"></p>
+</body>
 </html>
