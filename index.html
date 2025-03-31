@@ -50,13 +50,11 @@
     </script>
     <style>
         @font-face {
-            font-family: 'VCR OSD Mono [RUS by Daymarius]';
-            src: url('VCROSDMonoRUSbyDaymarius.woff2') format('woff2'),
-            url('VCROSDMonoRUSbyDaymarius.woff') format('woff');
-            font-weight: normal;
-            font-style: normal;
-            font-display: swap;
-        }
+    font-family: 'Impact Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Impact Regular'), url('impact.woff') format('woff');
+    }
 
         p{
             font-family: 'VCR OSD Mono [RUS by Daymarius]';
@@ -71,7 +69,7 @@
             height: 25px;
             outline: 0;
             border: 2px solid rgb(255, 255, 255);
-            font-family: 'VCR OSD Mono [RUS by Daymarius]';
+            font-family: 'Impact Regular';
         }
 
         .input_psw{
@@ -81,7 +79,7 @@
             height: 25px;
             outline: 0;
             border: 2px solid rgb(0, 0, 0);
-            font-family: 'VCR OSD Mono [RUS by Daymarius]';
+            font-family: 'Impact Regular';
         }
         
 
@@ -90,7 +88,7 @@
             color: #000;
             outline: 0;
             border: 2px solid #000;
-            font-family: 'VCR OSD Mono [RUS by Daymarius]';
+            font-family: 'Impact Regular';
             
         }
         img{
@@ -102,7 +100,7 @@
 <body bgcolor="black">
     <br>
     <br>
-    <img src="cloud1.png">
+    <img src="cloud.png">
     <p>Введите имя пользователя</p>
     <input class="input_name" id="nameInput">
     <button onclick="input()">Войти</button>
