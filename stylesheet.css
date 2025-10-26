@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'VCR OSD Mono [RUS by Daymarius]';
+    src: url('VCROSDMonoRUSbyDaymarius.woff2') format('woff2'),
+        url('VCROSDMonoRUSbyDaymarius.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
