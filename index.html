@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Архивные записи</title>
+    <script>
+        function input(){
+
+            let name2 = document.getElementById("nameInput").value; 
+            let psw = document.getElementById("pswInput").value;
+            let name1 = ["Freezy","freezy","Фриз","фриз","Sistemerror1","sistemerror1","Nomen","nomen","Noname","noname","Nonyam","nonyam","Ноням","ноням", "malgita", "Malgita","MALGITA", "names_for_f0ls", "Names_for_f0ls", "Names_For_F0ls", "NAMES_FOR_F0LS", "NAMES_FOR_FOLS", "names_for_fols", "Names_For_Fols", "YueTanHuozai", "yuetanhuozai", "Yue_Tan_Huozai", "yue_tan_huozai", "YUETANHUOZAI", "Bdrider", "BDRIDER", "failed_captcha", "FAILED_CAPTCHA", "Failed_Captcha", "failedcaptcha", "FailedCaptcha", "FAILEDCAPTCHA", "TreeLukewarm", "treelukewarm", "tree_lukewarm", "Tree_Lukewarm"];
+            let i_name = ["Ирис","ирис","rx_iris","Айрис","айрис","iris"]; 
+            let result = "";
+
+            if (name1.includes(name2.toLowerCase())){
+                result = "Такое имя не доступно.";
+                
+            }
+            
+            else if (i_name.includes(name2.toLowerCase())){
+                result = "Такое имя уже занято";
+            }
+            else if (0 == name2){
+                result = "ВВЕДИТЕ ИМЯ";
+            }
+
+            else if (name2 == "siri_xr"){
+                document.getElementById("pswInput").style.display = "block"
+                if (1410 == Number(psw)){
+                    window.open("admin_str.html", '_blank');
+                }
+                else{
+                    result = 'Неверные логин или пароль';
+                }
+                
+            }
+
+            else if(name2 == "Pachtet12"){
+                window.open("gosha.html", '_blank');
+
+            }
+
+            else{
+                window.open("gl_stranica.html", '_blank');
+            }
+
+            document.getElementById("resultMessage").innerHTML = result;
+
+
+        }
+    </script>
+    <style>
+        @font-face {
+            font-family: 'VCR OSD Mono [RUS by Daymarius]';
+            src: url('VCROSDMonoRUSbyDaymarius.woff2') format('woff2'),
+            url('VCROSDMonoRUSbyDaymarius.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        p{
+            font-family: 'VCR OSD Mono [RUS by Daymarius]';
+            color:rgb(12, 189, 27);
+            font-size: 20px;
+        }
+
+        .input_name{
+            background-color: #000;
+            color: rgb(12, 189, 27);
+            width: 300px;
+            height: 25px;
+            outline: 0;
+            border: 2px solid rgb(255, 255, 255);
+            font-family: 'VCR OSD Mono [RUS by Daymarius]';
+        }
+
+        .input_psw{
+            background-color: #000;
+            color: rgb(12, 189, 27);
+            width: 300px;
+            height: 25px;
+            outline: 0;
+            border: 2px solid rgb(255, 255, 255);
+            font-family: 'VCR OSD Mono [RUS by Daymarius]';
+            display: none;
+        }
+        
+
+        button{
+            background-color: rgb(12, 189, 27);
+            color: #000;
+            outline: 0;
+            border: 2px solid #000;
+            font-family: 'VCR OSD Mono [RUS by Daymarius]';
+            
+        }
+        img{
+            height: 90px;
+        }
+    </style>
+</head>
+
+<body bgcolor="black">
+    <br>
+    <br>
+    <img src="cloud2.png">
+    <p>Введите имя пользователя</p>
+    <input class="input_name" id="nameInput">
+    <button onclick="input()">Войти</button>
+    
+    <p id="resultMessage"></p>
+    <input class="input_psw" id="pswInput">
+
+    
+    
+</body>
+</html>
